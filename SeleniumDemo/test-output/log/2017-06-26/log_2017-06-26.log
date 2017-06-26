@@ -1,0 +1,32 @@
+[2017-06-26 15:56:07,309] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2017-06-26 15:56:07,312] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取testng.xml配置的FirefoxDriver浏览器并将其初始化
+
+[2017-06-26 15:56:07,623] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 15:56:07,633] ERROR org.webdriver.patatiumwebui.utils.TestListener 0
+[2017-06-26 16:01:34,067] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2017-06-26 16:01:34,069] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取testng.xml配置的ChormeDriver浏览器并将其初始化
+
+[2017-06-26 16:01:34,139] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase 没有成功浏览器环境配置错误
+[2017-06-26 16:01:34,321] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 16:01:34,330] ERROR org.webdriver.patatiumwebui.utils.TestListener 0
+[2017-06-26 17:19:47,382] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2017-06-26 17:19:47,414] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取testng.xml配置的ChormeDriver浏览器并将其初始化
+
+[2017-06-26 17:19:47,560] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase 没有成功浏览器环境配置错误
+[2017-06-26 17:19:48,442] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 17:19:48,444] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 17:19:48,459] ERROR org.webdriver.patatiumwebui.utils.TestListener 0
+[2017-06-26 17:21:57,101] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2017-06-26 17:21:57,103] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取testng.xml配置的ChromeDriver浏览器并将其初始化
+
+[2017-06-26 17:23:02,540] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase 没有成功浏览器环境配置错误
+[2017-06-26 17:23:02,838] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 17:23:02,840] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 17:23:02,855] ERROR org.webdriver.patatiumwebui.utils.TestListener 0
+[2017-06-26 17:34:23,767] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2017-06-26 17:34:23,769] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取testng.xml配置的ChromeDriver浏览器并将其初始化
+
+[2017-06-26 17:34:45,253] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase 没有成功,浏览器环境配置错误
+[2017-06-26 17:34:45,465] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 17:34:45,468] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 17:34:45,477] ERROR org.webdriver.patatiumwebui.utils.TestListener 0
