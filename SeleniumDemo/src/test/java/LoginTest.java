@@ -38,6 +38,8 @@ public class LoginTest extends TestBaseCase {
 		//设置用例断言，判断用例是否失败
 		Assertion.VerityError();
 	}
+	
+	
 	//数据驱动案例--start
 	@DataProvider(name="longinData")
 	public Object[][] loginData()

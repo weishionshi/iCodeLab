@@ -12,7 +12,7 @@ import java.io.IOException;
 public class LoginAction extends TestBaseCase{
     public LoginAction(String Url,String UserName,String PassWord) throws IOException
     {
-        //此driver变量继承自TestBase变量
+        //此driver变量继承自TestBaseCase变量
         LoginPage loginPage=new LoginPage();
         loginPage.open(Url);
         System.out.println(driver.getCurrentUrl());

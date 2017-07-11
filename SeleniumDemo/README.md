@@ -1,34 +1,45 @@
 #PatatiumWebUi
 <h1>简介</h1>
- **这是一个WebUI自动化测试框架，由<a href="http://www.webdriver.org">webdriver中文社区</a>创办人土豆(本人技术笔名)所创建,该web自动化测试框架是用java语言编写的，基于selenium webdriver 的开源自动化测试框架，该框架结合了testng,selenium,webdriver，jxl，jodd-http 等工具。该框架基于页面对象模型（POM）架构，实现了关键字驱动技术，数据驱动,无需掌握多少编程知识即可编写脚本，同时实现了数据与代码分离的功能：1、元素定位信息保存在对象库文件中 2、测试用例数据可以存储在excel中。从而实现，页面元素位置变化，无需改动脚本，只需修改对应的元素定位信息即可。
-     该框架实现了检查点及用例失败自动截图功能，自动生成html测试报告及自动发送html邮件测试报告功能。
-     目前框架还不是特别完善，还需要写一些脚本实现自动化；学习该框架需要熟悉一定的HTML 和java基础，后续可以考虑自动编码的实现。**
+ **这是一个WebUI自动化测试框架，由<a href="http://www.webdriver.org">webdriver中文社区</a>创办人土豆(本人技术笔名)所创建,该web自动化测试框架是用java语言编写的，基于selenium webdriver 的开源自动化测试框架，该框架结合了testng,selenium,webdriver，jxl，jodd-http 等工具。  
+该框架基于页面对象模型（POM）架构，实现了关键字驱动技术，数据驱动,无需掌握多少编程知识即可编写脚本。  
+同时实现了数据与代码分离的功能：  
+1. 元素定位信息保存在对象库文件中；   
+2. 测试用例数据可以存储在excel中。从而实现，页面元素位置变化，无需改动脚本，只需修改对应的元素定位信息即可。  
+该框架实现了检查点及用例失败自动截图功能，自动生成html测试报告及自动发送html邮件测试报告功能。  
+目前框架还不是特别完善，还需要写一些脚本实现自动化.  
+学习该框架需要有一定的HTML 和java基础，后续可以考虑自动编码的实现。**
 <h1>环境配置</h1>
-1、jdk 1.8
-2、idea/eclipse
-3、maven
+1. jdk 1.8
+2. idea/eclipse
+3. maven
 <h1>注意事项</h1>
 工程项目编码需要设置为UTF-8否则会出现中文乱码情况
 <h1>API文档</h1>
 <a href="http://www.webdriver.org/doc/patatiumwebui/api/">点击查看API文档</a>
 <h1>实现的功能</h1>
- 1、XML管理元素对象信息
- 2、统一的操作API风格，action.操作(某个页面.某个元素（）)
- 3、数据驱动
- 4、关键字驱动
- 5、用例失败自动截图并展示到报表中
- 6、自动生成html报表，自动发送html邮件报告
- 7、用例串行一次性执行多个浏览器，可用于兼容性测试
+ 1. XML管理元素对象信息
+ 2. 统一的操作API风格，action.操作(某个页面.某个元素（）)
+ 3. 数据驱动
+ 4. 关键字驱动
+ 5. 用例失败自动截图并展示到报表中
+ 6. 自动生成html报表，自动发送html邮件报告
+ 7. 用例串行一次性执行多个浏览器，可用于兼容性测试
+
 <h1>Demo演示</h1>
 <h2>1、对象库文件编写(文件名定义为UILibrary.xml)</h2>
+
 ```
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!--整个对象库文件的根目录，管理整个项目的对象-->
-<map>
+
+<map>  
+
     <!--管理一个页面的元素（webelement：input,select,textare,a,li等标签），一个page包含多个locator对象
     Pagename:page对象名字，格式：org.webdriver.patatiumwebui.PageObject.xxxPage;最后面那位才是真正的页面名字，前面的是java对象库路径；另外注意，页面名字是头个单词大写；例如主页：名字定义为 org.webdriver.patatiumwebui.HomePage
     Value：页面对象的URL，可不填。
     Desc:页面对象中文描述-->
+
     <page pagename="org.webdriver.patatiumwebui.pageObject.LoginPage" value="" desc="京东登录页面">
         <!--管理一个页面的元素（webelement：input,select,textare,a,li等标签），一个page包含多个locator对象
         Type：定位方式，包含id,name,class,linktext,xpath,css等，定位元素的时候灵活使用，一般可以统一用xpath
@@ -41,8 +52,11 @@
 		<locator type="id" timeout="3" value="nloginpwd"  desc="密码">密码输入框</locator>
 		<locator type="id" timeout="3" value="loginsubmit"  desc="登录">登录按钮</locator>
 	</page>
-</map>
+
+</map>  
+
 ```
+
 对象库文件编写后，运行/src/main/java/org/webdriver/patatiumwebui/PageObjectConfig/PageObjectAutoCode.java 文件生成对象库java代码
 
 <h2>2、公共action封装实例（业务操作）</h2>

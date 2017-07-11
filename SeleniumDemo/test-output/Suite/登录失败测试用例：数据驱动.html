@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 26 17:34:23 CST 2017</td>
+<td>Started on:</td><td>Mon Jul 10 22:46:43 CST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21736 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (730 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,11 +76,23 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='LoginTest.setup()'><b>setup</b><br>Test class: LoginTest<br>Parameters: ChromeDriver, </td>
-<td><div><pre>java.lang.NullPointerException
-	at org.webdriver.patatiumwebui.utils.TestBaseCase.setup(TestBaseCase.java:40)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641415002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1641415002'><pre>java.lang.NullPointerException
-	at org.webdriver.patatiumwebui.utils.TestBaseCase.setup(TestBaseCase.java:40)
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	Type mismatch: cannot convert from FirefoxDriver to WebDriver
+	Type mismatch: cannot convert from ChromeDriver to WebDriver
+	Type mismatch: cannot convert from InternetExplorerDriver to WebDriver
+	Type mismatch: cannot convert from FirefoxDriver to WebDriver
+
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.setDriver(TestBaseCase.java:77)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.setup(TestBaseCase.java:34)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1205555397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1205555397'><pre>java.lang.Error: Unresolved compilation problems: 
+	Type mismatch: cannot convert from FirefoxDriver to WebDriver
+	Type mismatch: cannot convert from ChromeDriver to WebDriver
+	Type mismatch: cannot convert from InternetExplorerDriver to WebDriver
+	Type mismatch: cannot convert from FirefoxDriver to WebDriver
+
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.setDriver(TestBaseCase.java:77)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.setup(TestBaseCase.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -133,8 +145,8 @@ function toggleAllBoxes() {
 	at org.webdriver.patatiumwebui.utils.ScreenShot.takeScreenshot(ScreenShot.java:24)
 	at org.webdriver.patatiumwebui.utils.ScreenShot.takeScreenshot(ScreenShot.java:40)
 	at org.webdriver.patatiumwebui.utils.TestListener.onTestSkipped(TestListener.java:151)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1138410383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1138410383'><pre>java.lang.NullPointerException
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652149987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1652149987'><pre>java.lang.NullPointerException
 	at org.webdriver.patatiumwebui.utils.ScreenShot.takeScreenshot(ScreenShot.java:24)
 	at org.webdriver.patatiumwebui.utils.ScreenShot.takeScreenshot(ScreenShot.java:40)
 	at org.webdriver.patatiumwebui.utils.TestListener.onTestSkipped(TestListener.java:151)
@@ -161,7 +173,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
 <td>0</td>
-<td>LoginTest@60285225</td></tr>
+<td>LoginTest@38bc8ab5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -174,7 +186,7 @@ function toggleAllBoxes() {
 <td title='LoginTest.loginFail()'><b>loginFail</b><br>Test class: LoginTest<br>Test method: 登录失败用例<br>Parameters: aaa, bbb, 账户名与密码不匹配，请重新输入</td>
 <td></td>
 <td>0</td>
-<td>LoginTest@60285225</td></tr>
+<td>LoginTest@38bc8ab5</td></tr>
 </table><p>
 </body>
 </html>

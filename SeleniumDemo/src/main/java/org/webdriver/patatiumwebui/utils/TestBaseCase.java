@@ -151,7 +151,8 @@ public class TestBaseCase {
 	}
 	public static void main(String args[])
 	{
-		WebDriver driver2=new FirefoxDriver();
+		//WebDriver driver2=new FirefoxDriver();
+		WebDriver driver2=new ChromeDriver();
 		driver2.get("http://www.baidu.com");
 	}
 

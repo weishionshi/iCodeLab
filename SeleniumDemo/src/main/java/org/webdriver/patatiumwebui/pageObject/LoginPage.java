@@ -4,13 +4,15 @@ import java.io.InputStream;
 import org.webdriver.patatiumwebui.utils.BaseAction;
 import org.webdriver.patatiumwebui.utils.Locator;
 import org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCode;//京东登录页面_对象库类
+
 public class LoginPage extends BaseAction {
 //用于eclipse工程内运行查找对象库文件路径
 private String path="src/main/java/org/webdriver/patatiumwebui/pageObjectConfig/UILibrary.xml";
+
  public   LoginPage() {
 //工程内读取对象库文件
 	setXmlObjectPath(path);
-getLocatorMap();
+	getLocatorMap();
 }
 /***
 * 账户登录

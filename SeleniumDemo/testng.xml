@@ -26,7 +26,7 @@
       <class name="LoginTest">
       	     <methods >
                    <include name="loginFail" />
-             </methods>
+             </methods> 
        </class>
     </classes>
   </test> <!-- Test -->

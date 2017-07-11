@@ -30,3 +30,8 @@
 [2017-06-26 17:34:45,465] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
 [2017-06-26 17:34:45,468] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
 [2017-06-26 17:34:45,477] ERROR org.webdriver.patatiumwebui.utils.TestListener 0
+[2017-06-26 23:39:29,549] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2017-06-26 23:39:29,552] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取testng.xml配置的ChromeDriver浏览器并将其初始化
+
+[2017-06-26 23:39:29,790] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-06-26 23:39:29,801] ERROR org.webdriver.patatiumwebui.utils.TestListener 0

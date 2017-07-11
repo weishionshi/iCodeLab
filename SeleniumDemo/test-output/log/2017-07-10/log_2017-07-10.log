@@ -1,0 +1,6 @@
+[2017-07-10 22:46:44,012] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2017-07-10 22:46:44,035] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取testng.xml配置的ChromeDriver浏览器并将其初始化
+
+[2017-07-10 22:46:44,640] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-07-10 22:46:44,643] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-07-10 22:46:44,654] ERROR org.webdriver.patatiumwebui.utils.TestListener 0
