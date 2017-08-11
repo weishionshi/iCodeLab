@@ -22,7 +22,7 @@
      <test name="登录失败测试用例：数据驱动"> <!-- 测试用例描述-->
          <!--<parameter name="driver" value="ChromeDriver" /> &lt;!&ndash;测试浏览器：支持火狐，谷歌，IE&ndash;&gt;-->
          <!--<parameter name="nodeURL" value="http://192.168.0.178:3155/wd/hub" /> &lt;!&ndash;selenium grid分布式运行node节点url，如不用分布式运行，则留空&ndash;&gt;-->
-       <classes>
+    <classes>
       <class name="LoginTest">
       	     <methods >
                    <include name="loginFail" />
@@ -30,6 +30,8 @@
        </class>
     </classes>
   </test> <!-- Test -->
+  
+  
     <test name="登录成功测试用例">
         <!--<parameter name="driver" value="ChromeDriver" /> &lt;!&ndash;测试浏览器：支持火狐，谷歌，IE&ndash;&gt;-->
         <!--<parameter name="nodeURL" value="http://192.168.0.178:3166/wd/hub" /> &lt;!&ndash;selenium grid分布式运行node节点url，如不用分布式运行，则留空&ndash;&gt;-->
@@ -41,4 +43,5 @@
             </class>
         </classes>
     </test> <!-- Test -->
+    
 </suite> <!-- Suite -->
