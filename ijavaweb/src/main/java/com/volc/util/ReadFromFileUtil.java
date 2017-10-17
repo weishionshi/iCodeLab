@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 
 
 
@@ -19,16 +20,17 @@ public class ReadFromFileUtil {
 	
 	public static String ReadFromFile(String filePath){
 		BufferedReader reader = null;
-		String string = "";
+		String string = null;
 		//1.先实例化一个File对象
 		File file = new File(prjPath+filePath);
 		//2.
 		
 		try {
 			reader = new BufferedReader(new FileReader(file));
-			
-			while(reader.readLine() !=null){
-				string = string + reader.readLine();
+			String tempString = null;  
+			while((tempString=reader.readLine()) !=null){
+				string = string + tempString;
+				 System.out.println(tempString); 
 			}
 			
 		} catch (FileNotFoundException e) {
@@ -52,8 +54,8 @@ public class ReadFromFileUtil {
 				
 	}
 	
-	public static JSON ReadFromFileAsJson(String filePath){
-		return (JSON) JSON.toJSON(ReadFromFile(filePath));
+	public static JSONObject getJsonFromFile(String filePath){
+		return JSON.parseObject(ReadFromFile(filePath));
 
 	}
 	
