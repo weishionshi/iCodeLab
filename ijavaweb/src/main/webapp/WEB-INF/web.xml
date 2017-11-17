@@ -4,4 +4,31 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet> 
+        <servlet-name>TestHTTPServer</servlet-name> 
+        <servlet-class>com.volc.service.impl.SmsHTTPServer</servlet-class> 
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>TestServlet2</servlet-name>
+  	<display-name>TestServlet2</display-name>
+  	<description></description>
+  	<servlet-class>com.volc.service.impl.TestServlet2</servlet-class>
+  	<init-param>
+  		<param-name>inital</param-name>
+  		<param-value>inital...</param-value>
+  		<description></description>
+  	</init-param>
+  </servlet> 
+  
+  <servlet-mapping> 
+        <servlet-name>TestHTTPServer</servlet-name> 
+        <url-pattern>/servlet/test1</url-pattern> 
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestServlet2</servlet-name>
+  	<url-pattern>/servlet/test2</url-pattern>
+  </servlet-mapping>
 </web-app>

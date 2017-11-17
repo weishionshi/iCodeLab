@@ -15,19 +15,20 @@ import com.alibaba.fastjson.JSONObject;
 
 public class ReadFromFileUtil {
 	
-	private static String prjPath = System.getProperty("user.dir");
+	//private static String prjPath = System.getProperty("user.dir");
+	private static String prjPath = "F:/GitHub/iCodeLab/ijavaweb";
 
 	
-	public static String ReadFromFile(String filePath){
+	public static String readFromFile(String filePath){
 		BufferedReader reader = null;
-		String string = null;
+		String string = "";
 		//1.先实例化一个File对象
 		File file = new File(prjPath+filePath);
 		//2.
 		
 		try {
 			reader = new BufferedReader(new FileReader(file));
-			String tempString = null;  
+			String tempString = "";  
 			while((tempString=reader.readLine()) !=null){
 				string = string + tempString;
 				 System.out.println(tempString); 
@@ -55,7 +56,7 @@ public class ReadFromFileUtil {
 	}
 	
 	public static JSONObject getJsonFromFile(String filePath){
-		return JSON.parseObject(ReadFromFile(filePath));
+		return JSON.parseObject(readFromFile(filePath));
 
 	}
 	
