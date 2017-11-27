@@ -1,0 +1,20 @@
+{
+    "companyName":"IBM",
+    "companyId":"333001",
+    "address":"Shenzhen,China",
+    "isForeign":true,
+    "employees":[
+        {
+            "firstName":"Bill",
+            "lastName":"Gates"
+        },
+        {
+            "firstName":"George",
+            "lastName":"Bush"
+        },
+        {
+            "firstName":"Thomas",
+            "lastName":"Carter"
+        }
+    ]
+}

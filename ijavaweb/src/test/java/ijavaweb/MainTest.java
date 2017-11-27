@@ -1,12 +1,23 @@
 package ijavaweb;
 
+import java.util.Properties;
+import java.util.Set;
+
 import com.alibaba.fastjson.JSONObject;
 import com.volc.util.ReadFromFileUtil;
 
 public class MainTest {
 
 	public static void main(String[] args) {
-		objectCompare();
+		//seperatLine();
+		getSystemProperties();
+		seperatLine();
+		
+		test();
+		seperatLine();
+		
+		//objectCompare();
+		//seperatLine();
 
 	}
 	
@@ -29,11 +40,34 @@ public class MainTest {
 	}
 	
 	public static void test(){
-		String filePath = "/src/main/resources/json/test.json";
-		String string = ReadFromFileUtil.ReadFromFile(filePath);
+		String filePath1 = "/src/main/resources/json/test.json";
+		String filePath2 = "/src/main/resources/acquire/createOrderAndPay.json";
+		String filePath3 = "/src/main/resources/response/createOrderAndPay.json";
+		
+		String string = ReadFromFileUtil.readFromFile(filePath3);
+		//JSONObject json = ReadFromFileUtil.getJsonFromFile(filePath1);
 		
 		System.out.println(string);
-		System.out.println(ReadFromFileUtil.ReadFromFileAsJson(filePath));
+
+	}
+	
+	public static void getSystemProperties(){
+        Properties sysProperty=System.getProperties(); //œµÕ≥ Ù–‘
+        Set<Object> keySet = sysProperty.keySet();
+        for (Object object : keySet) {
+            String property = sysProperty.getProperty(object.toString());
+            System.out.println(object.toString()+" : "+property);
+        }
+		System.out.println("user.dir: "+System.getProperty("user.dir"));
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+	}
+	
+	public static void seperatLine(){
+		System.out.println("-------------------------------");
 	}
 
 }
