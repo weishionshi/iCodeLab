@@ -1,25 +1,33 @@
 package com.volc.test;
 
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
 import com.alibaba.fastjson.JSONObject;
 import com.volc.util.ReadFromFileUtil;
+import org.apache.log4j.Logger;
 
 public class MainTest {
 
+	private static Logger log = Logger.getLogger(MainTest.class);
 	public static void main(String[] args) {
-		//seperatLine();
-		getSystemProperties();
-		seperatLine();
+		log.debug("debug message");
+		log.info("info message");
+		log.error("error meesage");
+		line();
 		
-		test();
-		seperatLine();
+		getSystemProperties();
+		line();
+		
+		//test();
+		//line();
 		
 		//objectCompare();
 		//seperatLine();
 
-	}
+	} 
 	
 	public static void objectCompare(){
 		JSONObject json1 = new JSONObject();
@@ -53,12 +61,18 @@ public class MainTest {
 	
 	public static void getSystemProperties(){
         Properties sysProperty=System.getProperties(); //œµÕ≥ Ù–‘
-        Set<Object> keySet = sysProperty.keySet();
-        for (Object object : keySet) {
-            String property = sysProperty.getProperty(object.toString());
-            System.out.println(object.toString()+" : "+property);
+        Iterator it=sysProperty.entrySet().iterator();
+        while(it.hasNext()){
+        	Map.Entry entry=(Map.Entry)it.next();
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            System.out.println(key +":"+value);
         }
-		System.out.println("user.dir: "+System.getProperty("user.dir"));
+//        Set keySet = sysProperty.keySet();
+//        for (Object object : keySet) {
+//            String property = sysProperty.getProperty(object.toString());
+//            System.out.println(object.toString()+" : "+property);
+//        }
 		System.out.println();
 		System.out.println();
 		System.out.println();
@@ -66,8 +80,13 @@ public class MainTest {
 		
 	}
 	
-	public static void seperatLine(){
+	public static void line(){
 		System.out.println("-------------------------------");
+	}
+	
+	public static void print(Object obj){
+		System.out.println(obj.toString());
+		
 	}
 
 }

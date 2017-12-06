@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="iLab" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1510024926000</longProp>
+        <longProp name="ThreadGroup.end_time">1510024926000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="SUPERGW_HOST" elementType="Argument"> 
+              <stringProp name="Argument.name">SUPERGW_HOST</stringProp>
+              <stringProp name="Argument.value">100.81.75.165</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="payUserId" elementType="Argument">
+              <stringProp name="Argument.name">payUserId</stringProp>
+              <stringProp name="Argument.value">216810000003197091855</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="payUserNickName" elementType="Argument">
+              <stringProp name="Argument.name">payUserNickName</stringProp>
+              <stringProp name="Argument.value">abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz12</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="payUserExternalUserId" elementType="Argument">
+              <stringProp name="Argument.name">payUserExternalUserId</stringProp>
+              <stringProp name="Argument.value">1234567890123456789012345678901234567890123456789012345678901234</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="payUserExternalUserType" elementType="Argument">
+              <stringProp name="Argument.name">payUserExternalUserType</stringProp>
+              <stringProp name="Argument.value">MERCHANT</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PC_STANDARD_ACQUIRING_PROD" elementType="Argument">
+              <stringProp name="Argument.name">PC_STANDARD_ACQUIRING_PROD</stringProp>
+              <stringProp name="Argument.value">51051000100000000001</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PC_AUTHCAPTURE_ACQUIRING_PROD" elementType="Argument">
+              <stringProp name="Argument.name">PC_AUTHCAPTURE_ACQUIRING_PROD</stringProp>
+              <stringProp name="Argument.value">51051000100000000003</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="MERCHANT_PREAUTH_CANEXCEED_CANMULTIPLE" elementType="Argument">
+              <stringProp name="Argument.name">MERCHANT_PREAUTH_CANEXCEED_CANMULTIPLE</stringProp>
+              <stringProp name="Argument.value">216820000003356087311</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="MERCHANT_PREAUTH_CANEXCEED" elementType="Argument">
+              <stringProp name="Argument.name">MERCHANT_PREAUTH_CANEXCEED</stringProp>
+              <stringProp name="Argument.value">216820000003358607810</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="MERCHANT_PREAUTH_CANMULTIPLE" elementType="Argument">
+              <stringProp name="Argument.name">MERCHANT_PREAUTH_CANMULTIPLE</stringProp>
+              <stringProp name="Argument.value">216820000003358619936</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="MERCHANT_PREAUTH_RESTRICT" elementType="Argument">
+              <stringProp name="Argument.name">MERCHANT_PREAUTH_RESTRICT</stringProp>
+              <stringProp name="Argument.value">216820000003361678706</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="MERCHANT_PREAUTH_CANEXCEED_CANMULTIPLE_HIGHEXCEEDRATE" elementType="Argument">
+              <stringProp name="Argument.name">MERCHANT_PREAUTH_CANEXCEED_CANMULTIPLE_HIGHEXCEEDRATE</stringProp>
+              <stringProp name="Argument.value">216820000003359756841</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PATH_createOrder" elementType="Argument">
+              <stringProp name="Argument.name">PATH_createOrder</stringProp>
+              <stringProp name="Argument.value">/alipayplus/acquiring/order/createOrder.htm</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PATH_payConsult" elementType="Argument">
+              <stringProp name="Argument.name">PATH_payConsult</stringProp>
+              <stringProp name="Argument.value">/alipayplus/payment/cashier/payview/consult.htm</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="TMP_RandomString" elementType="Argument">
+              <stringProp name="Argument.name">TMP_RandomString</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">${__RandomString(64,1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PATH_cashierPay" elementType="Argument">
+              <stringProp name="Argument.name">PATH_cashierPay</stringProp>
+              <stringProp name="Argument.value">/alipayplus/payment/cashier/pay.htm</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="orderAmount" elementType="Argument">
+              <stringProp name="Argument.name">orderAmount</stringProp>
+              <stringProp name="Argument.value">9000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PATH_queryByAcquirementId" elementType="Argument">
+              <stringProp name="Argument.name">PATH_queryByAcquirementId</stringProp>
+              <stringProp name="Argument.value">/alipayplus/acquiring/order/queryByAcquirementId.htm</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PATH_refundConsult" elementType="Argument">
+              <stringProp name="Argument.name">PATH_refundConsult</stringProp>
+              <stringProp name="Argument.value">/alipayplus/acquiring/refund/refundConsult.htm</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP请求默认值" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${SUPERGW_HOST}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </ConfigTestElement>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="createOrder Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;request&quot;:{&#xd;
+		&quot;head&quot;:{&#xd;
+			&quot;clientId&quot;:&quot;2016030715243903536806&quot;,&#xd;
+			&quot;function&quot;:&quot;alipayplus.acquiring.order.createOrder&quot;,&#xd;
+			&quot;reserve&quot;:&quot;{\&quot;\&quot;source\&quot;\&quot;:\&quot;\&quot;end2end\&quot;\&quot;}&quot;,&#xd;
+			&quot;clientSecret&quot;:&quot;ifUJTbL6DnHwYU2xumZ9EEOmCm75wub5&quot;,&#xd;
+			&quot;reqTime&quot;:&quot;2017-11-06T17:59:49.921+08:00&quot;,&#xd;
+			&quot;accessToken&quot;:&quot;accessToken&quot;,&#xd;
+			&quot;version&quot;:&quot;fixed-a&quot;,&#xd;
+			&quot;reqMsgId&quot;:&quot;201711061509962389921createOrder&quot;&#xd;
+		},&#xd;
+		&quot;body&quot;:{&#xd;
+			&quot;notificationUrls&quot;:[&#xd;
+				{&#xd;
+					&quot;type&quot;:&quot;NOTIFICATION&quot;,&#xd;
+					&quot;url&quot;:&quot;http://jarvis.alipay.net/test_tool/spi/mockSpiResponse&quot;&#xd;
+				}&#xd;
+			],&#xd;
+			&quot;paymentPreference&quot;:{},&#xd;
+			&quot;productCode&quot;:&quot;${PC_AUTHCAPTURE_ACQUIRING_PROD}&quot;,&#xd;
+			&quot;merchantId&quot;:&quot;${MERCHANT_PREAUTH_CANEXCEED_CANMULTIPLE}&quot;,&#xd;
+			&quot;envInfo&quot;:{&#xd;
+				&quot;appVersion&quot;:&quot;1.0&quot;,&#xd;
+				&quot;merchantAppVersion&quot;:&quot;1.0&quot;,&#xd;
+				&quot;orderTerminalType&quot;:&quot;APP&quot;,&#xd;
+				&quot;clientKey&quot;:&quot;e5806b64-598d-414f-b7f7-83f9576eb6fb&quot;,&#xd;
+				&quot;websiteLanguage&quot;:&quot;en_US&quot;,&#xd;
+				&quot;clientIp&quot;:&quot;10.15.8.189&quot;,&#xd;
+				&quot;osType&quot;:&quot;iOS.iPhone&quot;,&#xd;
+				&quot;sdkVersion&quot;:&quot;3.0&quot;,&#xd;
+				&quot;sessionId&quot;:&quot;example&quot;,&#xd;
+				&quot;orderOsType&quot;:&quot;iPhone&quot;,&#xd;
+				&quot;terminalType&quot;:&quot;WEB&quot;&#xd;
+			},&#xd;
+			&quot;mcc&quot;:&quot;mcc&quot;,&#xd;
+			&quot;order&quot;:{&#xd;
+				&quot;seller&quot;:{&#xd;
+					&quot;userId&quot;:&quot;208811111111111&quot;&#xd;
+				},&#xd;
+				&quot;merchantTransType&quot;:&quot;type&quot;,&#xd;
+				&quot;orderAmount&quot;:{&#xd;
+					&quot;currency&quot;:&quot;INR&quot;,&#xd;
+					&quot;value&quot;:&quot;${orderAmount}&quot;&#xd;
+				},&#xd;
+				&quot;shippingInfo&quot;:[&#xd;
+					{&#xd;
+						&quot;lastName&quot;:&quot;Lew&quot;,&#xd;
+						&quot;zipCode&quot;:&quot;310001&quot;,&#xd;
+						&quot;merchantShippingId&quot;:&quot;001&quot;,&#xd;
+						&quot;address2&quot;:&quot;street2&quot;,&#xd;
+						&quot;address1&quot;:&quot;street1&quot;,&#xd;
+						&quot;mobileNo&quot;:&quot;13765443223&quot;,&#xd;
+						&quot;phoneNo&quot;:&quot;2423-2322342&quot;,&#xd;
+						&quot;firstName&quot;:&quot;Dee&quot;,&#xd;
+						&quot;carrier&quot;:&quot;Federal Express&quot;,&#xd;
+						&quot;cityName&quot;:&quot;sh&quot;,&#xd;
+						&quot;areaName&quot;:&quot;example&quot;,&#xd;
+						&quot;faxNo&quot;:&quot;2123-11113&quot;,&#xd;
+						&quot;stateName&quot;:&quot;SH&quot;,&#xd;
+						&quot;trackingNo&quot;:&quot;trackingNo&quot;,&#xd;
+						&quot;chargeAmount&quot;:{&#xd;
+							&quot;currency&quot;:&quot;INR&quot;,&#xd;
+							&quot;value&quot;:&quot;100&quot;&#xd;
+						},&#xd;
+						&quot;countryName&quot;:&quot;JP&quot;,&#xd;
+						&quot;email&quot;:&quot;abc@gmail.com&quot;&#xd;
+					}&#xd;
+				],&#xd;
+				&quot;expiryTime&quot;:&quot;2018-11-07T17:59:49.907+08:00&quot;,&#xd;
+				&quot;merchantTransId&quot;:&quot;${__RandomString(64,1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,merchantTransId)}&quot;,&#xd;
+				&quot;createdTime&quot;:&quot;2017-11-06T17:59:49.907+08:00&quot;,&#xd;
+				&quot;goods&quot;:[&#xd;
+					{&#xd;
+						&quot;unit&quot;:&quot;Kg&quot;,&#xd;
+						&quot;merchantShippingId&quot;:&quot;001&quot;,&#xd;
+						&quot;quantity&quot;:&quot;3.2&quot;,&#xd;
+						&quot;price&quot;:{&#xd;
+							&quot;currency&quot;:&quot;INR&quot;,&#xd;
+							&quot;value&quot;:&quot;100&quot;&#xd;
+						},&#xd;
+						&quot;snapshotUrl&quot;:&quot;www.alipay.com&quot;,&#xd;
+						&quot;description&quot;:&quot;Women Summer Dress New White Lace Sleeveless Cute Casual Summer Dresses Vestidos roupas femininas WQW1045&quot;,&#xd;
+						&quot;category&quot;:&quot;32423&quot;,&#xd;
+						&quot;merchantGoodsId&quot;:&quot;24525635625623&quot;&#xd;
+					}&#xd;
+				],&#xd;
+				&quot;orderTitle&quot;:&quot;Order Title by Jmeter&quot;,&#xd;
+				&quot;orderMemo&quot;:&quot;Memo2&quot;,&#xd;
+				&quot;maxExcessAmount&quot;:{},&#xd;
+				&quot;buyer&quot;:{&#xd;
+					&quot;userId&quot;:&quot;${payUserId}&quot;,&#xd;
+					&quot;nickname&quot;:&quot;${payUserNickName}&quot;,&#xd;
+					&quot;externalUserId&quot;:&quot;${payUserExternalUserId}&quot;,&#xd;
+					&quot;externalUserType&quot;:&quot;${payUserExternalUserType}&quot;&#xd;
+				}&#xd;
+			}&#xd;
+		}&#xd;
+	},&#xd;
+	&quot;signature&quot;:&quot;signature string&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">${PATH_createOrder}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SUCCESS Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1878428063">&quot;resultCodeId&quot;:&quot;00000000&quot;</stringProp>
+              <stringProp name="-2126449507">&quot;resultCode&quot;:&quot;SUCCESS&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract acquirmentId" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">acquirementId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.body.acquirementId</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="payConsult Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;request&quot;:{&#xd;
+		&quot;head&quot;:{&#xd;
+			&quot;clientId&quot;:&quot;2016030715243903536806&quot;,&#xd;
+			&quot;function&quot;:&quot;alipayplus.payment.cashier.payview.consult&quot;,&#xd;
+			&quot;reserve&quot;:{&#xd;
+				&quot;source&quot;:&quot;end2end&quot;&#xd;
+			},&#xd;
+			&quot;clientSecret&quot;:&quot;ifUJTbL6DnHwYU2xumZ9EEOmCm75wub5&quot;,&#xd;
+			&quot;reqTime&quot;:&quot;2001-07-04T12:08:56-07:00&quot;,&#xd;
+			&quot;version&quot;:&quot;fixed-a&quot;,&#xd;
+			&quot;reqMsgId&quot;:&quot;77e30eee43894318a27645717a2b3cc1&quot;&#xd;
+		},&#xd;
+		&quot;body&quot;:{&#xd;
+			&quot;productCode&quot;:&quot;${PC_AUTHCAPTURE_ACQUIRING_PROD}&quot;,&#xd;
+			&quot;actorContext&quot;:{&#xd;
+				&quot;actorType&quot;:&quot;MERCHANT_OPERATOR&quot;,&#xd;
+				&quot;actorId&quot;:&quot;${__RandomString(64,1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,actorId)}&quot;&#xd;
+			},&#xd;
+			&quot;transType&quot;:&quot;ACQUIRING&quot;,&#xd;
+			&quot;transId&quot;:&quot;${acquirementId}&quot;,&#xd;
+			&quot;envInfo&quot;:{&#xd;
+				&quot;appVersion&quot;:&quot;1.0&quot;,&#xd;
+				&quot;merchantAppVersion&quot;:&quot;1.0&quot;,&#xd;
+				&quot;orderTerminalType&quot;:&quot;APP&quot;,&#xd;
+				&quot;tokenId&quot;:&quot;a8d359d6-ca3d-4048-9295-bbea5f6715a6&quot;,&#xd;
+				&quot;clientKey&quot;:&quot;e5806b64-598d-414f-b7f7-83f9576eb6fb&quot;,&#xd;
+				&quot;websiteLanguage&quot;:&quot;en_US&quot;,&#xd;
+				&quot;clientIp&quot;:&quot;10.15.8.189&quot;,&#xd;
+				&quot;osType&quot;:&quot;iOS.iPhone&quot;,&#xd;
+				&quot;sdkVersion&quot;:&quot;3.0&quot;,&#xd;
+				&quot;sessionId&quot;:&quot;example&quot;,&#xd;
+				&quot;orderOsType&quot;:&quot;iPhone&quot;,&#xd;
+				&quot;terminalType&quot;:&quot;WEB&quot;&#xd;
+			},&#xd;
+			&quot;payerUserId&quot;:&quot;${payUserId}&quot;&#xd;
+		}&#xd;
+	},&#xd;
+	&quot;signature&quot;:&quot;signature string&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">${PATH_payConsult}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SUCCESS Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1878428063">&quot;resultCodeId&quot;:&quot;00000000&quot;</stringProp>
+              <stringProp name="-2126449507">&quot;resultCode&quot;:&quot;SUCCESS&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract payerAccountNo" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">payerAccountNo</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.body.payMethodViews[0].payChannelOptionViews[0].balanceChannelInfos[0].payerAccountNo</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract securityId" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">securityId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.body.securityId</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="cashierPay Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;request&quot;:{&#xd;
+		&quot;head&quot;:{&#xd;
+			&quot;clientId&quot;:&quot;2016030715243903536806&quot;,&#xd;
+			&quot;function&quot;:&quot;alipayplus.payment.cashier.pay&quot;,&#xd;
+			&quot;reserve&quot;:{&#xd;
+				&quot;source&quot;:&quot;end2end&quot;&#xd;
+			},&#xd;
+			&quot;clientSecret&quot;:&quot;ifUJTbL6DnHwYU2xumZ9EEOmCm75wub5&quot;,&#xd;
+			&quot;reqTime&quot;:&quot;2015-07-04T12:08:56-07:00&quot;,&#xd;
+			&quot;version&quot;:&quot;fixed-a&quot;,&#xd;
+			&quot;reqMsgId&quot;:&quot;71e230c35e414fb692f90eb1fe0c24a6&quot;&#xd;
+		},&#xd;
+		&quot;body&quot;:{&#xd;
+			&quot;actorContext&quot;:{&#xd;
+				&quot;actorType&quot;:&quot;MERCHANT_OPERATOR&quot;,&#xd;
+				&quot;actorId&quot;:&quot;0663399304962275095065313587537364823506196730024585337529970039&quot;&#xd;
+			},&#xd;
+			&quot;transType&quot;:&quot;ACQUIRING&quot;,&#xd;
+			&quot;transId&quot;:&quot;${acquirementId}&quot;,&#xd;
+			&quot;requestId&quot;:&quot;${__RandomString(64,1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ)}&quot;,&#xd;
+			&quot;envInfo&quot;:{&#xd;
+				&quot;appVersion&quot;:&quot;1.0&quot;,&#xd;
+				&quot;merchantAppVersion&quot;:&quot;1.0&quot;,&#xd;
+				&quot;orderTerminalType&quot;:&quot;APP&quot;,&#xd;
+				&quot;tokenId&quot;:&quot;a8d359d6-ca3d-4048-9295-bbea5f6715a6&quot;,&#xd;
+				&quot;clientKey&quot;:&quot;e5806b64-598d-414f-b7f7-83f9576eb6fb&quot;,&#xd;
+				&quot;websiteLanguage&quot;:&quot;en_US&quot;,&#xd;
+				&quot;clientIp&quot;:&quot;10.15.8.189&quot;,&#xd;
+				&quot;osType&quot;:&quot;iOS.iPhone&quot;,&#xd;
+				&quot;sdkVersion&quot;:&quot;3.0&quot;,&#xd;
+				&quot;sessionId&quot;:&quot;example&quot;,&#xd;
+				&quot;orderOsType&quot;:&quot;iPhone&quot;,&#xd;
+				&quot;terminalType&quot;:&quot;WEB&quot;&#xd;
+			},&#xd;
+			&quot;securityId&quot;:&quot;${securityId}&quot;,&#xd;
+			&quot;payerUserId&quot;:&quot;${payUserId}&quot;,&#xd;
+			&quot;payOptionBills&quot;:[&#xd;
+				{&#xd;
+					&quot;transAmount&quot;:{&#xd;
+						&quot;currency&quot;:&quot;INR&quot;,&#xd;
+						&quot;value&quot;:&quot;${orderAmount}&quot;&#xd;
+					},&#xd;
+					&quot;channelInfo&quot;:&quot;&quot;,&#xd;
+					&quot;topupAndPay&quot;:false,&#xd;
+					&quot;payMethod&quot;:&quot;BALANCE&quot;,&#xd;
+					&quot;payerAccountNo&quot;:&quot;${payerAccountNo}&quot;,&#xd;
+					&quot;payOption&quot;:&quot;BALANCE&quot;,&#xd;
+					&quot;chargeAmount&quot;:{&#xd;
+						&quot;currency&quot;:&quot;INR&quot;,&#xd;
+						&quot;value&quot;:&quot;0&quot;&#xd;
+					},&#xd;
+					&quot;cardCacheToken&quot;:&quot;&quot;,&#xd;
+					&quot;extendInfo&quot;:&quot;&quot;,&#xd;
+					&quot;saveChannelInfoAfterPay&quot;:false&#xd;
+				}&#xd;
+			],&#xd;
+			&quot;extendInfo&quot;:&quot;{\&quot;memo\&quot;:\&quot;memo\&quot;,\&quot;memo1\&quot;:\&quot;memo\&quot;,\&quot;memo2\&quot;:\&quot;memo\&quot;}&quot;&#xd;
+		}&#xd;
+	},&#xd;
+	&quot;signature&quot;:&quot;signature string&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">${PATH_cashierPay}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="ACCEPTED_SUCCESS Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1878428342">&quot;resultCodeId&quot;:&quot;00000009&quot;</stringProp>
+              <stringProp name="1102338041">&quot;resultCode&quot;:&quot;ACCEPTED_SUCCESS&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract cashierRequestId" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">cashierRequestId</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.response.body.cashierRequestId</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="queryByAcquirementId Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;request&quot;:{&#xd;
+		&quot;head&quot;:{&#xd;
+			&quot;clientId&quot;:&quot;2016030715243903536806&quot;,&#xd;
+			&quot;function&quot;:&quot;alipayplus.acquiring.order.queryByAcquirementId&quot;,&#xd;
+			&quot;reserve&quot;:{&#xd;
+				&quot;source&quot;:&quot;end2end&quot;&#xd;
+			},&#xd;
+			&quot;clientSecret&quot;:&quot;ifUJTbL6DnHwYU2xumZ9EEOmCm75wub5&quot;,&#xd;
+			&quot;reqTime&quot;:&quot;2016-08-23T14:43:00+05:30&quot;,&#xd;
+			&quot;accessToken&quot;:&quot;234567a&quot;,&#xd;
+			&quot;version&quot;:&quot;fixed-a&quot;,&#xd;
+			&quot;reqMsgId&quot;:&quot;4d8cbd26ab2242b5b1e505401fceb369&quot;&#xd;
+		},&#xd;
+		&quot;body&quot;:{&#xd;
+			&quot;acquirementId&quot;:&quot;${acquirementId}&quot;,&#xd;
+			&quot;needFullInfo&quot;:true,&#xd;
+			&quot;merchantId&quot;:&quot;${MERCHANT_PREAUTH_CANEXCEED_CANMULTIPLE}&quot;&#xd;
+		}&#xd;
+	},&#xd;
+	&quot;signature&quot;:&quot;signature string&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">${PATH_queryByAcquirementId}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="timer-10s" enabled="true">
+            <stringProp name="ConstantTimer.delay">10000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="acquirementStatus Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1878428063">&quot;resultCodeId&quot;:&quot;00000000&quot;</stringProp>
+              <stringProp name="-2126449507">&quot;resultCode&quot;:&quot;SUCCESS&quot;</stringProp>
+              <stringProp name="-1994277243">&quot;acquirementStatus&quot;:&quot;SUCCESS&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="refundConsult Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;request&quot;:{&#xd;
+		&quot;head&quot;:{&#xd;
+			&quot;clientId&quot;:&quot;2016030715243903536806&quot;,&#xd;
+			&quot;function&quot;:&quot;alipayplus.acquiring.refund.refundConsult&quot;,&#xd;
+			&quot;reserve&quot;:{&#xd;
+				&quot;source&quot;:&quot;end2end&quot;&#xd;
+			},&#xd;
+			&quot;clientSecret&quot;:&quot;ifUJTbL6DnHwYU2xumZ9EEOmCm75wub5&quot;,&#xd;
+			&quot;reqTime&quot;:&quot;2017-09-20T11:55:56+05:30&quot;,&#xd;
+			&quot;accessToken&quot;:&quot;accessToken&quot;,&#xd;
+			&quot;version&quot;:&quot;fixed-a&quot;,&#xd;
+			&quot;reqMsgId&quot;:&quot;86e81394f61b4c648063e94c9f2c8acb&quot;&#xd;
+		},&#xd;
+		&quot;body&quot;:{&#xd;
+			&quot;acquirementId&quot;:&quot;${acquirementId}&quot;,&#xd;
+			&quot;merchantId&quot;:&quot;${MERCHANT_PREAUTH_CANEXCEED_CANMULTIPLE}&quot;,&#xd;
+			&quot;requestId&quot;:&quot;${__RandomString(64,1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ)}&quot;,&#xd;
+			&quot;envInfo&quot;:{&#xd;
+				&quot;appVersion&quot;:&quot;1.0&quot;,&#xd;
+				&quot;merchantAppVersion&quot;:&quot;1.0&quot;,&#xd;
+				&quot;orderTerminalType&quot;:&quot;APP&quot;,&#xd;
+				&quot;clientKey&quot;:&quot;e5806b64-598d-414f-b7f7-83f9576eb6fb&quot;,&#xd;
+				&quot;websiteLanguage&quot;:&quot;en_US&quot;,&#xd;
+				&quot;clientIp&quot;:&quot;10.15.8.189&quot;,&#xd;
+				&quot;osType&quot;:&quot;iOS.iPhone&quot;,&#xd;
+				&quot;sdkVersion&quot;:&quot;3.0&quot;,&#xd;
+				&quot;sessionId&quot;:&quot;example&quot;,&#xd;
+				&quot;orderOsType&quot;:&quot;iPhone&quot;,&#xd;
+				&quot;terminalType&quot;:&quot;WEB&quot;&#xd;
+			},&#xd;
+			&quot;refundAmount&quot;:{&#xd;
+				&quot;currency&quot;:&quot;INR&quot;,&#xd;
+				&quot;value&quot;:&quot;${orderAmount}&quot;&#xd;
+			}&#xd;
+		}&#xd;
+	},&#xd;
+	&quot;signature&quot;:&quot;signature string&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">${PATH_refundConsult}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="SUCCESS Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1878428063">&quot;resultCodeId&quot;:&quot;00000000&quot;</stringProp>
+              <stringProp name="-2126449507">&quot;resultCode&quot;:&quot;SUCCESS&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="refundDestRisk Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1108675326">&quot;refundDestRisk&quot;:&quot;ACCEPT&quot;,&quot;refundDest&quot;:&quot;TO_SOURCE&quot;</stringProp>
+              <stringProp name="614613675">&quot;refundDestRisk&quot;:&quot;ACCEPT&quot;,&quot;refundDest&quot;:&quot;TO_BALANCE&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="order.query" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;request&quot;:{&#xd;
+		&quot;head&quot;:{&#xd;
+			&quot;clientId&quot;:&quot;2016030715243903536806&quot;,&#xd;
+			&quot;function&quot;:&quot;alipayplus.acquiring.order.query&quot;,&#xd;
+			&quot;reserve&quot;:{&#xd;
+				&quot;source&quot;:&quot;end2end&quot;&#xd;
+			},&#xd;
+			&quot;clientSecret&quot;:&quot;ifUJTbL6DnHwYU2xumZ9EEOmCm75wub5&quot;,&#xd;
+			&quot;reqTime&quot;:&quot;2016-08-23T14:43:00+05:30&quot;,&#xd;
+			&quot;accessToken&quot;:&quot;234567a&quot;,&#xd;
+			&quot;version&quot;:&quot;fixed-a&quot;,&#xd;
+			&quot;reqMsgId&quot;:&quot;eff9250b2daa4e0bb53a7b1df793bf2d&quot;&#xd;
+		},&#xd;
+		&quot;body&quot;:{&#xd;
+			&quot;acquirementId&quot;:&quot;20171106111212800110166759100576755&quot;,&#xd;
+			&quot;merchantId&quot;:&quot;216820000003356087311&quot;,&#xd;
+			&quot;merchantTransId&quot;:&quot;&quot;&#xd;
+		}&#xd;
+	},&#xd;
+	&quot;signature&quot;:&quot;signature string&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/alipayplus/acquiring/order/query.htm</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+	
+	
+	
+	
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="工作台" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree>
+      <ConfigTestElement guiclass="PropertyControlGui" testclass="ConfigTestElement" testname="Property Display" enabled="true"/>
+      <hashTree/>
+      <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="migrateUser" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+        <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </HTTPSamplerProxy>
+      <hashTree/>
+      <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="migrateUser Assertion" enabled="true">
+        <collectionProp name="Asserion.test_strings">
+          <stringProp name="0"></stringProp>
+        </collectionProp>
+        <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+        <boolProp name="Assertion.assume_success">false</boolProp>
+        <intProp name="Assertion.test_type">8</intProp>
+      </ResponseAssertion>
+      <hashTree/>
+      <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract userId and accountNo" enabled="true">
+        <stringProp name="JSONPostProcessor.referenceNames"></stringProp>
+        <stringProp name="JSONPostProcessor.jsonPathExprs"></stringProp>
+        <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+      </JSONPostProcessor>
+      <hashTree/>
+    </hashTree>
+	
+	
+  </hashTree>
+</jmeterTestPlan>
