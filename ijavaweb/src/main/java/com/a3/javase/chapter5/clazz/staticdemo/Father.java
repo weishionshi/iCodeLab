@@ -1,0 +1,17 @@
+package com.a3.javase.chapter5.clazz.staticdemo;
+
+public class Father {
+	protected static String staticStr1 = "staticString1";
+	protected String name="Father";
+	protected int age=30;
+	private String privateStr1;
+	
+	public void talk(){
+		System.out.println("Father:I'm "+this.name+","+this.age +" years old.");
+	}
+	
+	public static void print(){
+		System.out.println("Father:I'm always the father!");
+	}
+	
+}
