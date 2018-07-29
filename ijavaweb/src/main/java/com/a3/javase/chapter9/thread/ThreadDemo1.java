@@ -1,4 +1,4 @@
-package com.a3.javase.thread;
+package com.a3.javase.chapter9.thread;
 
 public class ThreadDemo1 implements Runnable {
 
