@@ -1,10 +1,10 @@
-package com.volc.test;
+package com.a3.test;
 
 import java.util.Properties;
 import java.util.Set;
 
-import com.a3.javase.thread.ThreadDemo1;
-import com.a3.javase.thread.ThreadSleepAndInterrupt;
+import com.a3.javase.chapter9.thread.ThreadDemo1;
+import com.a3.javase.chapter9.thread.ThreadSleepAndInterrupt;
 import com.alibaba.fastjson.JSONObject;
 import com.volc.util.ReadFromFileUtil;
 
