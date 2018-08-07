@@ -61,6 +61,11 @@
 	        <artifactId>spring-context-support</artifactId>  
 	        <version>4.3.9.RELEASE</version>  
 	    </dependency> 
+	    <dependency>  
+	        <groupId>org.springframework</groupId>  
+	        <artifactId>spring-test</artifactId>  
+	        <version>4.3.9.RELEASE</version>  
+	    </dependency> 
         <dependency>
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-log4j12</artifactId>
@@ -249,6 +254,12 @@
 		    <version>2.0.6</version>
 		</dependency>
 
+	    <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
 	    
   </dependencies>
   <build>
