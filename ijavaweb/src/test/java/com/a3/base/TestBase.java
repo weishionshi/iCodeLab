@@ -1,4 +1,4 @@
-package com.a3.common;
+package com.a3.base;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;

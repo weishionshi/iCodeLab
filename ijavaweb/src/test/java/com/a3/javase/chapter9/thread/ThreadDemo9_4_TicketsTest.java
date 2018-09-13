@@ -3,7 +3,7 @@ package com.a3.javase.chapter9.thread;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
-import com.a3.common.TestBase;
+import com.a3.base.TestBase;
 
 public class ThreadDemo9_4_TicketsTest extends TestBase{
 	
